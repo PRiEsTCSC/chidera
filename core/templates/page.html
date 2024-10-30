@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Defense Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #dee1e4;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin-top: 50px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #141618;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+        }
+        .form-col {
+            flex: 1;
+        }
+        .image-col {
+            flex: 1;
+            text-align: center;
+        }
+        .image-col img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        #submit {
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Creative Portfolio</h1>
+    <h2>Recover Account</h2>
+
+    <div class="row">
+        <!-- Form Section -->
+        <div class="form-col">
+            <form>
+                <!-- Category -->
+                <div class="mb-3">
+                    <label for="category" class="form-label">Category</label>
+                    <select class="form-select" id="category">
+                        <option selected>Select Category</option>
+                        <option value="1">Newbie</option>
+                        <option value="2">Advance</option>
+                        <option value="3">Professional</option>
+                    </select>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com">
+                </div>
+
+                <!-- 12-Phase Key -->
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">12-Phase Key</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*******">
+                </div>
+
+                <!-- Check me out -->
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Image Section -->
+        <div class="image-col">
+            <img src="/core/static/img/user interface.png" alt="Project Image">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

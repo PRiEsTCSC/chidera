@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Defense Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/core/static/user.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="form-container">
+            <h2 class="form-title">Password Manager</h2>
+
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <!-- Form Fields -->
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="gender">Gender</label>
+                    <input type="text" id="project" name="project" placeholder="Enter Gender" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+
+                <!-- File Upload (Image Section) -->
+                <div class="input-group">
+                    <label for="file">Upload Project Image</label>
+                    <input type="file" id="file" name="file" accept="image/*">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-submit">Submit</button>
+
+                <button type="forget password" class="forget">Forget Password</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
